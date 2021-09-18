@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3df620665c865722bfb54d20debeba39",
+    "content-hash": "9893fd4ea9548abc62f652efa15fe895",
     "packages": [
         {
             "name": "phalcon/migrations",
@@ -296,6 +296,16 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "Phalcon/DebugBar",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ilyaf1718/phalcon-debugbar.git",
+                "reference": "master"
+            },
+            "type": "library"
+        },
         {
             "name": "amphp/amp",
             "version": "v2.6.0",
