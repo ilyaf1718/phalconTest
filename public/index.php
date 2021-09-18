@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 use Dotenv\Dotenv;
@@ -39,7 +40,12 @@ try {
     /**
      * Init MVC Application and send output to client
      */
-    (new Application($di))
+    $application = new Phalcon\Mvc\Application($di); // Important: mustn't ignore $di param . The Same Micro APP: new Phalcon\Mvc\Micro($di);
+    $di['app'] = $application; //  Important
+
+    (new Phalcon\Debugbar\ServiceProvider())->start();
+
+    $application
         ->handle($_SERVER['REQUEST_URI'])
         ->send();
 } catch (Exception $e) {
