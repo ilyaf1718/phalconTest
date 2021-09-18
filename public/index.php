@@ -43,7 +43,7 @@ try {
     $application = new Phalcon\Mvc\Application($di); // Important: mustn't ignore $di param . The Same Micro APP: new Phalcon\Mvc\Micro($di);
     $di['app'] = $application; //  Important
 
-    (new Phalcon\Debugbar\ServiceProvider())->start();
+    (new Phalcon\DebugBar\ServiceProvider())->start();
 
     $application
         ->handle($_SERVER['REQUEST_URI'])
