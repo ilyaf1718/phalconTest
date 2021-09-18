@@ -1,5 +1,3 @@
 <?php  
 
-echo('test');
-
-phpinfo();
+echo '1234';
