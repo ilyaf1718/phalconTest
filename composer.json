@@ -34,7 +34,7 @@
             
         },
         "psr-0": {
-            "Phalcon\\DebugBar\\": "../phalcon_debugbar/src/"
+            "Phalcon\\DebugBar\\": "phalcon-debugbar/src/"
         }
     },
     "archive": {
