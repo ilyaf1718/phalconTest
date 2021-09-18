@@ -30,7 +30,10 @@
     },
     "autoload": {
         "psr-4": {
-            "Invo\\": "src/",
+            "Invo\\": "src/"
+            
+        },
+        "psr-0": {
             "Phalcon\\DebugBar\\": "phalcon_debugbar/src/"
         }
     },
